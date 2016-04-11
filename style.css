@@ -1,3 +1,33 @@
-body {
-  background:green;
+html {
+  background:white;
+  font-family:cursive;
+  color: purple;
 }
+img {
+  opacity: 0.9;
+  border-style: double;
+}
+h1 {
+  width: 55%;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 230px;
+  margin-top: auto;
+}
+.yup {
+  text-decoration: underline;
+}
+.stars {
+  background-image: url("stars.jpg")
+}
+a:visited {
+      color: red;
+  }
+  #id {
+    text-decoration: line-through;
+  }
+  @media screen and (max-width: 500px) {
+      body {
+          background-color: purple;
+      }
+    }
