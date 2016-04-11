@@ -21,7 +21,7 @@ h1 {
   background-image: url("stars.jpg")
 }
 a:visited {
-      color: red;
+      color: orange;
   }
   #id {
     text-decoration: line-through;
