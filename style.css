@@ -9,3 +9,13 @@ h1 {
 }
 .firstcharacter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; 
 }
+
+#container {
+    position: relative;
+    z-index: 10;
+}
+
+#background {
+	position: absolute;
+	z-index: -1
+}
