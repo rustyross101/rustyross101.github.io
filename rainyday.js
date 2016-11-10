@@ -13,7 +13,7 @@ function RainyDay(options, canvas) {
 	this.img = options.image;
 	var defaults = {
 		opacity: 1,
-		blur: 10,
+		blur: 8,
 		crop: [0, 0, this.img.naturalWidth, this.img.naturalHeight],
 		enableSizeChange: true,
 		parentElement: document.getElementsByTagName('body')[0],
