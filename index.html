@@ -1,26 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Ministry of Magic</title>
-  <body>
-<h1>Ministry of Magic Graduate Program</h1>
-          <p>
-            Congratulations on graduating Hogwarts. Now prepare for the next chapter of your magical world.
-          </p>
-          <img src="sorting_hat.jpg" alt="Sorting Hat" height="200" width="200">
-  <form action="begin.html">
-      <p>Graduating House:<br>
-        <input class="stars" type="text">
-      <br>
-  <input style="font-family:cursive" type="submit" value="Begin">
-</form>
-<h2>Don't Remember Your House?</h2>
-  <ol>
-    <li>Good Borders</li>
-    <li id="id">Reference for the User</li>
-  </ol>
-<a href="http://www.thealmightyguru.com/Reviews/HarryPotter/Docs/Quiz-House.html">Return to the Hat</a>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <meta charset="utf-8">
+        <title>rainyday.js demo #2</title>
+        <style media="screen">
+            body {
+                overflow: hidden;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
 
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script src="rainyday.js"></script>
+        <script>
+            function run() {
+                var image = document.getElementById('background');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this
+                    });
+          engine.rain([ [3, 2, 2] ], 100);
+        };
+                image.crossOrigin = 'anonymous';
+                image.src = 'http://raw.githubusercontent.com/rustyross101/rustyross101.github.io/forest_wall/forest.jpg'
+            }
+
+            
+        </script>
+
+
+
+
+    </head>
+    <body onload="run();">
+          <img id="background" alt="background" src="" />
+      <div id="container">
+        <h1>David Ross</h1>
+        <!-- <img src="images/davie.png"> -->
+        <h3>“It is by being fully involved with every detail of our lives, whether good or bad, that we find happiness, not by trying to look for it directly.”<br> 
+        - Mihaly Csikszentmihalyi</h3>
+        <p><span class="firstcharacter">L</span>
+          isticle mustache chambray, brunch lumbersexual fashion axe four loko umami normcore air plant portland. Church-key poke distillery normcore chia schlitz lomo, la croix edison bulb bushwick. Pop-up tumblr celiac four dollar toast art party umami. Cardigan fixie mlkshk, trust fund coloring book pinterest green juice heirloom 3 wolf moon chartreuse literally iPhone. Franzen banjo vinyl, polaroid live-edge messenger bag post-ironic jean shorts heirloom put a bird on it af irony mumblecore asymmetrical. Portland echo park meh, cray viral post-ironic tofu forage. Truffaut twee fanny pack, pour-over lyft portland blog copper mug lomo quinoa jianbing normcore vaporware microdosing.
+        </p>
+      </div>
+    </body>
 </html>
